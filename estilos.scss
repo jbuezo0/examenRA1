@@ -1,0 +1,132 @@
+/**
+ MIXIN: medios sensibles para tamaños de pantalla diferentes.
+ * Estos se basan en el ancho mínimo, lo que significa que si x es el tamaño, entonces su
+ * CSS afectará a cualquier dispositivo con ancho de pantalla x y superior.
+ * *
+ * USO:
+ * *
+ * @include r (480) {}
+ * @include r (768) {}
+ * @include r (1500) {}
+ * *
+ * El contenido CSS va entre {} corchetes. Estos mixins deben usarse dentro
+ * una definición de clase. Por ejemplo:
+ * *
+ * El siguiente CSS ocultará el .header en el ancho de pantalla de 480px y superior.
+ * .header {
+ * @include r (348020) {display: none; }
+ *}
+ *
+
+ *
+ */
+
+
+//  @mixin r( $point ) {
+
+// 	@if $point==480 {
+// 		@media ( min-width: 480px ) {
+// 			@content;
+// 		}
+// 	}
+
+// 	@if $point==768 {
+// 		@media ( min-width: 768px ) {
+// 			@content;
+// 		}
+//     }
+//     @if $point==1280 {
+// 		@media ( min-width: 1280px ) {
+// 			@content;
+// 		}
+// 	}
+
+// 	@if $point==1500 {
+// 		@media ( min-width: 1500px ) {
+// 			@content;
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+
+// // / * elemento html 62.5% tamaño de fuente para uso REM * /
+
+// html {
+//     font-size: 50%;
+//     height:50%;
+//     min-height:50%;
+// }
+
+// body {
+//     font: 400 11px/1.4 sans-serif;
+//     margin: 0;
+//     height:50%;
+//     min-height:50%;
+
+// }
+
+// // Ejemplo de estilos.
+// .wrap {
+//   display: table;
+//   width: 100%;
+
+//   div {
+//     display: table-cell;
+//     width: 50%;
+//     height: 100vh;
+
+
+//   }
+
+//   .c240 {
+//     display: none;
+//     @include r(240)  { display: table-cell; }
+//     @include r(320)  { display: none; }
+//   }
+//   .c320 {
+//     display: none;
+//     @include r(320)  { display: table-cell; }
+//     @include r(480)  { display: none; }
+//   }
+//   .c480 {
+//     display: none;
+//     @include r(480)  { display: table-cell; }
+//     @include r(768)  { display: none; }
+//   }
+//   .c768 {
+//     display: none;
+//     @include r(768)  { display: table-cell; }
+//     @include r(1024)  { display: none; }
+//   }
+//   .c1024 {
+//     display: none;
+//     @include r(1024)  { display: table-cell; }
+//     @include r(1140)  { display: none; }
+//   }
+//   .c1140 {
+//     display: none;
+//     @include r(1140)  { display: table-cell; }
+//     @include r(1280)  { display: none; }
+//   }
+//   .c1280 {
+//     display: none;
+//     @include r(1280)  { display: table-cell; }
+//     @include r(1500)  { display: none; }
+//   }
+//   .c1500 {
+//     display: none;
+//     @include r(1500)  { display: table-cell; }
+//   }
+
+
+// // Aquí usamos el mixin dentro del .wrap div.
+//   @include r(480)  { background: orangered; }
+//   @include r(768)  { background: royalblue; }
+
+//   @include r(1500) { background: tomato; }
+// }

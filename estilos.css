@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/**
+ * MIXIN: Responsive Media Queries.
+ *
+ * Creates responsive media queries for seven different screen sizes.
+ * These are based on min-width which means if x is the size then your
+ * CSS will affect any device with screen width x and above.
+ *
+ * USAGE: 
+ *	@include r(240)  { }
+ *	@include r(320)  { }
+ *	@include r(480)  { }
+ *	@include r(768)  { }
+ *	@include r(1024) { }
+ *	@include r(1140) { }
+ *	@include r(1280) { }
+ *  @include r(1500) { }
+ *
+ * CSS content goes inside {} brackets. These mixins should be used inside
+ * a class definition. For example:
+ *
+ * The following CSS will hide the .header on screen width 320px and above.
+ * .header {
+ * 	  @include r(320)  { display: none; }
+ * }
+ *
+ * @author Ahmad Awais (https://github.com/ahmadawais)
+ */
+/* html element 62.5% font-size for REM use */
+body {
+  margin: 0; }
+
+.wrap {
+  display: table;
+  width: 100%; }
+  .wrap .div {
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+    font-size: 5vw;
+    padding: 5vw; }
+  .wrap .c240 {
+    display: none; }
+    @media (min-width: 240px) {
+      .wrap .c240 {
+        display: table-cell; } }
+    @media (min-width: 320px) {
+      .wrap .c240 {
+        display: none; } }
+  .wrap .c320 {
+    display: none; }
+    @media (min-width: 320px) {
+      .wrap .c320 {
+        display: table-cell; } }
+    @media (min-width: 480px) {
+      .wrap .c320 {
+        display: none; } }
+  .wrap .c480 {
+    display: none; }
+    @media (min-width: 480px) {
+      .wrap .c480 {
+        display: table-cell; } }
+    @media (min-width: 768px) {
+      .wrap .c480 {
+        display: none; } }
+  .wrap .c768 {
+    display: none; }
+    @media (min-width: 768px) {
+      .wrap .c768 {
+        display: table-cell; } }
+    @media (min-width: 1024px) {
+      .wrap .c768 {
+        display: none; } }
+  .wrap .c1024 {
+    display: none; }
+    @media (min-width: 1024px) {
+      .wrap .c1024 {
+        display: table-cell; } }
+    @media (min-width: 1140px) {
+      .wrap .c1024 {
+        display: none; } }
+  .wrap .c1140 {
+    display: none; }
+    @media (min-width: 1140px) {
+      .wrap .c1140 {
+        display: table-cell; } }
+    @media (min-width: 1280px) {
+      .wrap .c1140 {
+        display: none; } }
+  .wrap .c1280 {
+    display: none; }
+    @media (min-width: 1280px) {
+      .wrap .c1280 {
+        display: table-cell; } }
+    @media (min-width: 1500px) {
+      .wrap .c1280 {
+        display: none; } }
+  .wrap .c1500 {
+    display: none; }
+    @media (min-width: 1500px) {
+      .wrap .c1500 {
+        display: table-cell; } }
+  @media (min-width: 240px) {
+    .wrap {
+      background: beige; } }
+  @media (min-width: 320px) {
+    .wrap {
+      background: orange; } }
+  @media (min-width: 480px) {
+    .wrap {
+      background: orangered; } }
+  @media (min-width: 768px) {
+    .wrap {
+      background: royalblue; } }
+  @media (min-width: 1024px) {
+    .wrap {
+      background: gold; } }
+  @media (min-width: 1140px) {
+    .wrap {
+      background: khaki; } }
+  @media (min-width: 1280px) {
+    .wrap {
+      background: thistle; } }
+  @media (min-width: 1500px) {
+    .wrap {
+      background: tomato; } }
+
+/**
+ MIXIN: medios sensibles para tamaños de pantalla diferentes.
+ * Estos se basan en el ancho mínimo, lo que significa que si x es el tamaño, entonces su
+ * CSS afectará a cualquier dispositivo con ancho de pantalla x y superior.
+ * *
+ * USO:
+ * *
+ * @include r (480) {}
+ * @include r (768) {}
+ * @include r (1500) {}
+ * *
+ * El contenido CSS va entre {} corchetes. Estos mixins deben usarse dentro
+ * una definición de clase. Por ejemplo:
+ * *
+ * El siguiente CSS ocultará el .header en el ancho de pantalla de 480px y superior.
+ * .header {
+ * @include r (348020) {display: none; }
+ *}
+ * 
+
+ *
+ */
+
+/*# sourceMappingURL=estilos.css.map */
