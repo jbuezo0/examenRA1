@@ -1,0 +1,106 @@
+#uno{
+    background-color: rgb(195, 182, 182);
+    color: white;
+    border: 3px solid transparent;
+    transition-property: background-color, border;
+    transition-duration: 0.8s;
+}
+
+#uno:hover{
+    background-color: rgb(195, 182, 182);
+    color: #fff;
+    border: 3px solid #fff;
+} 
+
+#dos{
+    position: relative;
+}
+
+#dos:hover:before{
+    width: 100%;
+}
+
+#dos:before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition:width 1s;
+}
+
+#tres{
+    position: relative;
+}
+
+#tres:hover::before{
+    width: 100%;
+}
+
+#tres::before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition:width 1s;
+}
+
+#tres:hover::after{
+    height: 100%;
+}
+#tres::after{
+    content: '';
+    height: 0%;
+    width: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition:height 1s;
+    
+}
+
+#cuatro{
+    position: relative;
+}
+
+#cuatro:hover:before{
+    width: 100%;
+}
+
+#cuatro:before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition:width 1s;
+}
+
+
+#cinco{
+    position: relative;
+}
+
+#cinco:hover:before{
+    width: 100%;
+    left: 0;
+}
+
+#cinco:before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition:width 1s;
+}
